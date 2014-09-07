@@ -35,6 +35,8 @@ info: Atlassian Connect add-on started at https://xxxxxxxx.ngrok.com
 
 You should now have an installable HipChat integration running at some unique url, like `https://xxxxxxxx.ngrok.com`, where the `xxxxxxxx` value will be a unique id for your server.
 
+The `project` directory in /home/vagrant in the guest VM is a share that mounts the cloned git repository on your host OS.  You can do your development either in the VM or, more likely, using your favorite editor or IDE running in the host OS.
+
 ```
-TODO: insert point to instructions for installing and testing the integration.
+TODO: point to instructions for installing and testing the integration.
 ```
