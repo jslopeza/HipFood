@@ -1,6 +1,6 @@
 {
-  "name": "hipchat-greeter-example",
-  "displayName": "HipChat Greeter Example Integration",
+  "name": "ac-koa-hipchat-vagrant",
+  "displayName": "HipChat Integration Example",
   "description": "Greets people when they type /hello in chat",
   "version": "0.1.0",
   "author": {
@@ -20,7 +20,7 @@
     "port": 3000
   },
   "production": {
-    "localBaseUrl": "https://hipchat-greeter-example.yourpaas.com",
+    "localBaseUrl": "https://hipchat-integration-example.yourpaas.com",
     "redisEnv": "REDISCLOUD_URL",
     "port": "$PORT"
   },

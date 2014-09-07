@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # init
+sudo apt-get install -y python-software-properties 2> /dev/null
+sudo add-apt-repository -y ppa:rwky/redis 2> /dev/null
 apt-get update 2> /dev/null
 apt-get install -y build-essential libssl-dev vim curl 2> /dev/null
 
