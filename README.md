@@ -11,7 +11,7 @@ It uses a basic [Vagrant](https://www.vagrantup.com) configuration to provide on
 
 # How do I use it?
 
-Start by cloning this project from git:
+Make sure that you have both [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed, then start by cloning this project from git:
 
 ```
 git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant hipchat-example
