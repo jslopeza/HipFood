@@ -16,6 +16,7 @@ It uses a basic [Vagrant](https://www.vagrantup.com) configuration to provide on
 Make sure that you have both [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed, then start by cloning this project from git:
 
 ```
+#!bash
 git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant hipchat-example
 ```
 
@@ -24,6 +25,8 @@ Edit the `package.json` file and give your project unique name and author fields
 You'll also need to install [Vagrant](https://www.vagrantup.com).  When that's done, run the following commands:
 
 ```
+#!bash
+
 > cd /path/to/hipchat-example
 > vagrant up
 # a few minutes later....
