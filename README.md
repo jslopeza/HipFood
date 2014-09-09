@@ -5,8 +5,10 @@ This is a basic project that demonstrates how to quickly get started developing 
 It uses a basic [Vagrant](https://www.vagrantup.com) configuration to provide one option for quickly getting started with a basic setup using the following dependencies:
 
 * Node.js 0.11.13
-* Redis 2.8.14 or later
-* ngrok and nodemon
+* Redis
+* MongoDB
+* ngrok
+* nodemon
 * a simple example addon
 
 # How do I use it?
@@ -26,10 +28,15 @@ You'll also need to install [Vagrant](https://www.vagrantup.com).  When that's d
 > vagrant up
 # a few minutes later....
 > vagrant ssh
-Welcome to your Vagrant-built virtual machine.
-Last login: Sun Sep  7 06:03:27 2014 from 10.0.2.2
+# ...
+Last login: Tue Sep  9 06:53:21 2014 from 10.0.2.2
+
+Tunnel established at https://xxxxxxxx.ngrok.com
+
+Run 'cd project && npm run web-dev' to start your add-on.
+
 $ cd project
-$ npm run tunnel
+$ npm run web-dev
 info: Atlassian Connect add-on started at https://xxxxxxxx.ngrok.com
 ```
 
