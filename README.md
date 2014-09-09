@@ -11,7 +11,7 @@ It uses a basic [Vagrant](https://www.vagrantup.com) configuration to provide on
 
 # How do I use it?
 
-Start by cloning this project from git:
+Make sure that you have both [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed, then start by cloning this project from git:
 
 ```
 git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant hipchat-example
@@ -37,6 +37,4 @@ You should now have an installable HipChat integration running at some unique ur
 
 The `project` directory in /home/vagrant in the guest VM is a share that mounts the cloned git repository on your host OS.  You can do your development either in the VM or, more likely, using your favorite editor or IDE running in the host OS.
 
-```
-TODO: point to instructions for installing and testing the integration.
-```
+Now, to install the add-on at hipchat.com, see the instructions [here](https://bitbucket.org/rbergman/ac-koa-hipchat/src/master/README.md), starting with the section titled "Manually installing the add-on using HipChat's admin UI".  The remainder of that document will also be useful for learning how to modify the starter add-on included with this project.
