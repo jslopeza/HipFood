@@ -1,11 +1,11 @@
 {
-  "name": "your-addon-key",
-  "displayName": "Your Add-on Name",
+  "name": "my-addon-key",
+  "displayName": "My Add-on Name",
   "description": "You add-on description",
   "version": "0.1.0",
   "author": {
-    "name": "Your Name",
-    "url": "http://yourcompany.com"
+    "name": "My Name",
+    "url": "http://mycompany.com"
   },
   "license": "Apache 2.0",
   "engines": {
@@ -19,7 +19,7 @@
     "port": 3000
   },
   "production": {
-    "localBaseUrl": "https://hipchat-integration-example.yourpaas.com",
+    "localBaseUrl": "https://my-addon.anypaas.com",
     "redisEnv": "REDISCLOUD_URL",
     "port": "$PORT"
   },

@@ -17,19 +17,19 @@ Make sure that you have both [Vagrant](https://www.vagrantup.com/downloads.html)
 
 ```
 #!bash
-git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant hipchat-example
+git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant my-addon
 ```
 
-Edit the `package.json` file and give your project unique name and author fields, at least.
+Edit the `package.json` file and give your project unique name and author fields, at least.  We also generate a random add-on key for use while running in the Vagrant VM (to avoid collisions with other developers while installing your add-on at hipchat.com), though you'll want to make sure you set an appropriate, unique key here if you deploy your project to production.
 
-You'll also need to install [Vagrant](https://www.vagrantup.com).  When that's done, run the following commands:
+When that's done, run the following commands:
 
 ```
 #!bash
 
 > cd /path/to/hipchat-example
 > vagrant up
-# a few minutes later....
+# several minutes later....
 > vagrant ssh
 # ...
 Last login: Tue Sep  9 06:53:21 2014 from 10.0.2.2
@@ -38,8 +38,8 @@ Tunnel established at https://xxxxxxxx.ngrok.com
 
 Run 'cd project && npm run web-dev' to start your add-on.
 
-$ cd project
-$ npm run web-dev
+$ cd project && npm run web-dev
+# ...
 info: Atlassian Connect add-on started at https://xxxxxxxx.ngrok.com
 ```
 
