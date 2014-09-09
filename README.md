@@ -22,6 +22,20 @@ git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant my-addon
 
 Edit the `package.json` file and give your project unique name and author fields, at least.  We also generate a random add-on key for use while running in the Vagrant VM (to avoid collisions with other developers while installing your add-on at hipchat.com), though you'll want to make sure you set an appropriate, unique key here if you deploy your project to production.
 
+These are the most important fields to configure now:
+
+```
+#!js
+
+  "name": "my-addon-key",
+  "displayName": "My Add-on Name",
+  "description": "You add-on description",
+  "author": {
+    "name": "My Name",
+    "url": "http://mycompany.com"
+  },
+```
+
 When that's done, run the following commands:
 
 ```
