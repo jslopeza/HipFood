@@ -1,7 +1,7 @@
 {
-  "name": "ac-koa-hipchat-vagrant",
-  "displayName": "HipChat Integration Example",
-  "description": "Greets people when they type /hello in chat",
+  "name": "your-addon-key",
+  "displayName": "Your Add-on Name",
+  "description": "You add-on description",
   "version": "0.1.0",
   "author": {
     "name": "Your Name",
@@ -13,8 +13,7 @@
   },
   "scripts": {
     "web": "node --harmony web.js",
-    "web-dev": "nodemon --harmony -e js,json,css,hbs web.js",
-    "tunnel": "nodemon --harmony -e js,json,css,hbs tunnel.js"
+    "web-dev": "nodemon --harmony -e js,json,css,hbs web.js"
   },
   "development": {
     "port": 3000
@@ -26,7 +25,6 @@
   },
   "dependencies": {
     "ac-koa": "^0.2.3",
-    "ac-koa-hipchat": "^0.2.4",
-    "ngrok": "^0.1.97"
+    "ac-koa-hipchat": "^0.2.4"
   }
 }
