@@ -27,7 +27,7 @@ When that's done, run the following commands:
 ```
 #!bash
 
-> cd /path/to/hipchat-example
+> cd /path/to/my-addon
 > vagrant up
 # several minutes later....
 > vagrant ssh
