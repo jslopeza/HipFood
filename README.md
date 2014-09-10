@@ -17,7 +17,7 @@ Make sure that you have both [Vagrant](https://www.vagrantup.com/downloads.html)
 
 ```
 #!bash
-git clone https://bitbucket.org/rbergman/ac-koa-hipchat-vagrant my-addon
+git clone https://bitbucket.org/atlassianlabs/ac-koa-hipchat-vagrant my-addon
 ```
 
 Edit the `package.json` file and give your project unique name and author fields, at least.  We also generate a random add-on key for use while running in the Vagrant VM (to avoid collisions with other developers while installing your add-on at hipchat.com), though you'll want to make sure you set an appropriate, unique key here if you deploy your project to production.
