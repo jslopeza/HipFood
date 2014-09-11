@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "ac-koa": "^0.2.3",
-    "ac-koa-hipchat": "^0.2.4"
+    "ac-koa-hipchat": "^0.2.8"
   }
 }
