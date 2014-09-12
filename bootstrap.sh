@@ -59,11 +59,8 @@ echo "Using existing .profile settings"
 else
 cat <<EOF >> /home/vagrant/.profile
 export DEV_KEY="${adj[$((RANDOM%num_adjs))]}-${noun[$((RANDOM%num_nouns))]}-$((RANDOM%10000))"
-export LOCAL_BASE_URL=`grep "Tunnel established" /var/log/ngrok.log | tail -1 | sed 's/.*Tunnel established at //g'`
-echo -e '\e[1m'
-grep "Tunnel established" /var/log/ngrok.log | tail -1 | sed 's/.*Tunnel/Tunnel/g'
-echo
-tput sgr0
+export LOCAL_BASE_URL=\`grep "Tunnel established" /var/log/ngrok.log | tail -1 | sed 's/.*Tunnel established at //g'\`
+echo -e "\n\e[1mTunnel established at \${LOCAL_BASE_URL}\e[0m\n"
 echo "Run 'cd project && npm run web-dev' to start your add-on."
 echo
 EOF
