@@ -37,7 +37,7 @@ sleep 2
 monit monitor all
 
 # install node
-apt-get install -y nodejs=0.11.13-1chl1~trusty1 2> /dev/null
+apt-get install -y nodejs=0.11.* 2> /dev/null
 npm install -g nodemon 2> /dev/null
 
 # set vim tabs
