@@ -24,7 +24,7 @@
     "port": "$PORT"
   },
   "dependencies": {
-    "ac-koa": "^0.2.3",
-    "ac-koa-hipchat": "^0.2.8"
+    "ac-koa": "^0.2.6",
+    "ac-koa-hipchat": "^0.2.14"
   }
 }
