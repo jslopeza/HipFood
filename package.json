@@ -1,11 +1,11 @@
 {
-  "name": "my-addon-key",
-  "displayName": "My Add-on Name",
-  "description": "You add-on description",
+  "name": "hipfoop",
+  "displayName": "HipFood",
+  "description": "Find food",
   "version": "0.1.0",
   "author": {
-    "name": "My Name",
-    "url": "http://mycompany.com"
+    "name": "Binoy Patel",
+    "url": "http://five-tech.com"
   },
   "license": "Apache 2.0",
   "engines": {
@@ -16,15 +16,18 @@
     "web-dev": "nodemon --harmony -e js,json,css,hbs web.js"
   },
   "development": {
-    "port": 3000
+    "port": 3000,
+    "localBaseUrl": "http://1dd3bed8.ngrok.com"
   },
   "production": {
-    "localBaseUrl": "https://my-addon.anypaas.com",
+    "localBaseUrl": "http://1dd3bed8.ngrok.com",
     "redisEnv": "REDISCLOUD_URL",
     "port": "$PORT"
   },
   "dependencies": {
     "ac-koa": "^0.2.6",
-    "ac-koa-hipchat": "^0.2.14"
+    "ac-koa-hipchat": "^0.2.14",
+    "ordrin-api": "^1.0.2",
+    "ac-koa-hipchat-notifier": "^0.1.0"
   }
 }
