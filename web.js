@@ -44,9 +44,8 @@ addon.webhook('room_message', regex, function *() {
   	if(err){
   		room.sendNotification('There is in error in your query!');
   	}
-  	//console.log(datas);
   	datas.forEach(function(data){
-  		room.sendNotification('<b>' + data.na + ' </b><i>' + data.cs_phone + '</i>');
+  		room.sendNotification('<b>' + data.na + ' </b><i>' + data.cs_phone + ' cusines : ' + data.cu[0] + ' ' + data.cu[1] + ' ' + data.cu[2] + '</i>');
   		//console.log(data);
   	});
   });
